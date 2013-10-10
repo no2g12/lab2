@@ -1,0 +1,57 @@
+h1, h2 {
+	font-weight: normal;
+}
+
+#content {
+	width: 900px;
+	margin: 20px auto 20px auto;
+}
+
+#header {
+	text-align: center;
+	font-size: 46px;
+	color: red;
+	margin-bottom: 20px;
+	border-top: 2px solid red;
+	padding-top: 15px;
+}
+
+#header img {
+	width: 200px;
+}
+
+#header img:first-child {
+	float: left;
+}
+
+#header img:last-child {
+	float: right;
+}
+
+#motd {
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid red;
+	margin-bottom: 40px;
+}
+
+#sidebar {
+	float: right;
+	width: 350px;
+}
+
+#calculators {
+	margin-top: 150px
+}
+
+.calculatorOutput {
+	display: none;
+	font-size: 24px;
+	color: red;
+}
+
+#footer {
+	font-size: 10px;
+}

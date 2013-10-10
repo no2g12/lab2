@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Boyd's Used Motors</title>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			body {
+				background-color: #FFFFCC;
+			}
+			
+			input[type="submit"] {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	
+	<body onload="startTimer()">
+		
+		<!-- body content -->
+		<div id="content">
+			<div id="header">
+				<img src="img/banner-left.png">
+				Boyd's Used Motors
+				<img src="img/banner-right.png">
+			</div>
+						
+			<!-- the special message of the day (motd) -->
+			<div id="motd">
+				A name you can surely trust!
+			</div>
+			
+			<!-- sales img -->
+			<div id="sidebar">
+				<img src="img/sales-boyd.png" width="100%">
+				Our trustworthy staff, sales lad Boyd!<br/>
+				<hr color="red" />
+				<img src='img/car-blue.png' id="car" height="256px" /><br/>
+				<a onclick="changeCar()" href="#">Click here to change car!</a>
+
+			</div><!-- /sales img -->
+			
+			<!-- main content -->
+			<div>
+				<p>Welcome to Boyd's Used Motors!!! We have some of the finest cars with only minor problems.</p>
+				
+				<p>We have been voted best car company in the UK by our employees 8 years running. Boyd's Used Motors has been running for over 13 years selling reliable used cars to the first person to walk in the door.</p>
+				
+				<p>We saw you coming and made a special price just for you! That's the quality service you can expect from our friendly staff.</p>
+				
+				<div id="calculators">
+					
+					<h2>Find the trade-in price of your car</h2>
+					<form id="calculate_car_price" action="">
+						<div>
+							Purchase price: <input type="text" name="carPurchasePrice" value="" />
+						</div>
+						<div>
+							Age 
+							<select name="carAge">
+								<option value="1">1 year</option>
+								<option value="2">2 years</option>
+								<option value="3">3 years</option>
+								<option value="4">4 years</option>
+								<option value="5">5 years</option>
+								<option value="6">6 years</option>
+								<option value="7">7 years</option>
+								<option value="8">8 or more</option>
+							</select>
+						</div>
+						
+						<input type="submit" value="Calculate the price!" onClick="calculateCarValue(this.form)" />
+					</form>
+					
+					
+					<hr/>
+					
+					
+					<div id="iNeedSomeMoney">
+						<h2>Need to borrow some money to buy that dream hot rod?</h2>
+						
+						<div>
+							How much to borrow? <input type="text" id="borrowValue" name="borrowValue" value="" />
+						</div>
+						
+						<div>For how long? 
+							<select id="borrowTime" name="borrowTime">
+								<option value="1">1 month</option>
+								<option value="12">1 year</option>
+								<option value="24">2 years</option>
+								<option value="60">5 years</option>
+								<option value="120">10 years</option>
+								<option value="240">20 years</option>
+								<option value="1200">My lifetime</option>
+							</select>
+						</div>
+						
+						<input type="submit" value="Calculate your loan" onClick="calculateLoan()" />
+						<div>
+							<p><span id="borrowTotalMonthly" class="calculatorOutput"></span></p>
+							<p><span id="borrowTotal" class="calculatorOutput"></span></p>
+						</div>
+					</div>
+				</div>
+			
+			</div><!-- /main content -->
+		
+			<br/><br/><br/><br/><br/><br/>
+			
+			<!-- footer -->
+			<div id="footer">
+				Designed by Boyd's Artistic Design Company
+			</div><!-- /footer -->
+			
+		
+		</div><!-- /body content -->
+	</body>
+</html>
